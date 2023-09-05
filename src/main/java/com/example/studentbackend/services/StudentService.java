@@ -50,7 +50,7 @@ public class StudentService {
    public void update(long id, StudentRequest student) {
       try {
          var updateStudent = this.repository.getReferenceById(id);
-         updateStudent.setName(student.name());
+         updateStudent.setNome(student.nome());
          updateStudent.setEmail(student.email());
          updateStudent.setCpf(student.cpf());
          updateStudent.setEndereco(student.endereco());

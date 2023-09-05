@@ -5,7 +5,7 @@ import jakarta.validation.constraints.NotBlank;
 
 public record StudentRequest(
     @NotBlank(message = "O Nome é obrigatório!")
-    String name, 
+    String nome, 
     @NotBlank(message = "O Email é obrigatório!")
     String email, 
     @NotBlank(message = "O CPF é obrigatório!")

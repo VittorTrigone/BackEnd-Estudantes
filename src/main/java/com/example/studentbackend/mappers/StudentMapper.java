@@ -10,7 +10,7 @@ import com.example.studentbackend.entities.Student;
 public class StudentMapper {
     public static Student toEntity(StudentRequest request) {
         Student student = new Student();
-        student.setName(request.name());
+        student.setNome(request.nome());
         student.setEmail(request.email());
         student.setCpf(request.cpf());
         student.setEndereco(request.endereco());
@@ -18,7 +18,7 @@ public class StudentMapper {
     }
 
     public static StudentResponse toDTO(Student student) {
-        return new StudentResponse(student.getId(), student.getName(), student.getEmail(), student.getCpf(),
+        return new StudentResponse(student.getId(), student.getNome(), student.getEmail(), student.getCpf(),
                 student.getEndereco());
     }
 

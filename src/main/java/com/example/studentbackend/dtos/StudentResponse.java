@@ -2,9 +2,9 @@ package com.example.studentbackend.dtos;
 
 public record StudentResponse(
     long id,
-    String name,
-    String cpf,
+    String nome,
     String email,
+    String cpf,
     String endereco
 
 ) {
